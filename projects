@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Projetos | Portfólio </title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<main class="container">
+  <div class="box">
+
+    <h2>Meus Projetos</h2>
+
+    <p>Selecione um projeto para acessar:</p>
+
+    <a href="./pages/geoip.html" class="btn">GeoIP</a>
+    <a href="./pages/cnpj.html" class="btn">CNPJ</a>
+    <a href="./pages/cep.html" class="btn">CEP</a>
+    <a href="./pages/whois.html" class="btn">WHOIS</a>
+
+  </div>
+
+</main>
+
+<div id="theme-toggle"></div>
+<div id="footer"></div>
+
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>
