@@ -35,7 +35,7 @@ body.dark {
   backdrop-filter: blur(10px);
 
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 body.dark .box {
@@ -142,11 +142,11 @@ body.dark .label-text {
   transition: 0.3s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #334155;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(24px);
 }
 
@@ -168,7 +168,7 @@ input:checked + .slider:before {
   text-align: center;
 
   color: #1e293b;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .footer-links {
@@ -189,7 +189,7 @@ input:checked + .slider:before {
 body.dark .footer {
   background: rgba(30, 41, 59, 0.6);
   color: #e2e8f0;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn {
@@ -238,4 +238,28 @@ input {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+#output {
+  margin-top: 25px;
+  padding: 20px;
+
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+
+  white-space: pre-line;
+
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  color: #1e293b;
+
+  transition: 0.3s;
 }
