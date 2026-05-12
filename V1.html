@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoIP Tool</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+
+<body>
+
+  <div id="navbar"></div>
+
+  <main class="container">
+
+    <div class="box">
+
+      <h2>GeoIP Lookup</h2>
+
+      <input type="text" id="ip" placeholder="Digite um IP (vazio = seu IP)">
+
+      <button class="btn" onclick="buscar()">
+        Buscar
+      </button>
+
+      <div id="resultado"></div>
+
+      <div
+        id="map"
+        style="height: 300px; margin-top: 20px; border-radius: 10px;"
+      ></div>
+
+    </div>
+
+  </main>
+
+  <div id="theme-toggle"></div>
+
+  <div id="footer"></div>
+
+  <script src="./assets/js/main.js"></script>
+
+  <script src="./assets/js/U1.js"></script>
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</body>
+
+</html>

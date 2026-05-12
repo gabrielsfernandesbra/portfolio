@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Projeto CNPJ | Portfólio </title>
+  <title>Projeto CEP | Portfólio</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -19,9 +19,13 @@
 
       <h2 class="h2">CNPJ Query</h2>
 
-      <input type="text" placeholder="ex: 000000000000000">
+      <input type="text" id="cnpj" placeholder="ex: 00000000000000">
 
-      <button class="btn">Buscar</button>
+      <button onclick="buscar()" class="btn">
+        Buscar
+      </button>
+
+      <div id="resultado"></div>
 
     </div>
 
@@ -32,6 +36,8 @@
   <div id="footer"></div>
 
   <script src="./assets/js/main.js"></script>
+
+  <script src="./assets/js/U2.js"></script>
 
 </body>
 
