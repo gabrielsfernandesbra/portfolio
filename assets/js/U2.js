@@ -1,11 +1,15 @@
 async function buscar() {
 
   const resultado = document.getElementById("resultado")
-  const cnpj = document.getElementById("cnpj").value
+
+  const cnpj = document
+    .getElementById("cnpj")
+    .value
+    .replace(/\D/g, "")
 
   try {
 
-    if (!cnpj || cnpj.length < 14) {
+    if (!cnpj || cnpj.length !== 14) {
       throw new Error("CNPJ inválido")
     }
 
@@ -39,9 +43,15 @@ async function buscar() {
         - ${data.cep || ""}
       </p>
 
-      <p><strong>Atividade:</strong> ${data.cnae_fiscal || ""} - ${data.cnae_fiscal_descricao || "N/A"}</p>
+      <p><strong>Atividade:</strong>
+        ${data.cnae_fiscal || ""} -
+        ${data.cnae_fiscal_descricao || "N/A"}
+      </p>
 
-      <p><strong>Contato:</strong> ${data.ddd_telefone_1 || "N/A"} / ${data.email || "N/A"}</p>
+      <p><strong>Contato:</strong>
+        ${data.ddd_telefone_1 || "N/A"} /
+        ${data.email || "N/A"}
+      </p>
 
       <p><strong>Sócios:</strong></p>
 

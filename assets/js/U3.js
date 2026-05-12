@@ -1,11 +1,15 @@
 async function buscar() {
 
   const resultado = document.getElementById("resultado")
-  const cep = document.getElementById("cep").value
+
+  const cep = document
+    .getElementById("cep")
+    .value
+    .replace(/\D/g, "")
 
   try {
 
-    if (!cep || cep.length < 8) {
+    if (!cep || cep.length !== 8) {
       throw new Error("CEP inválido")
     }
 
@@ -23,9 +27,13 @@ async function buscar() {
 
     resultado.innerHTML = `
       <h3>Endereço encontrado</h3>
+
       <p><strong>Rua:</strong> ${data.street || "N/A"}</p>
+
       <p><strong>Bairro:</strong> ${data.neighborhood || "N/A"}</p>
+
       <p><strong>Cidade:</strong> ${data.city}</p>
+
       <p><strong>Estado:</strong> ${data.state}</p>
     `
 
