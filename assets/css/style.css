@@ -263,3 +263,13 @@ input {
 
   transition: 0.3s;
 }
+.skills{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.skills ul{
+    list-style-type: disc;
+    text-align: left;
+}
